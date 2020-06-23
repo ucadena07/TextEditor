@@ -279,6 +279,7 @@ public class MainApp extends Application {
     // MAIN
 	public static void main(String[] args) {
 		launch(args);
+		
 	}
 	
 	public Stage getStage() {

@@ -3,12 +3,14 @@ package test;
 public class test {
 
 	public static void main(String[] args) {
-		String text = "2314511167";
-		String[] words = text.split(" ,+");
+	
 		
-		for (String word : words)
+		String s = "one (1), two (2), three (3)";
+		String[] s2 = s.split("[");
+		
+		for (int i = 0; i < s2.length; i ++)
 		{
-			System.out.println(word);
+			System.out.println(s2[i]);
 		}
 		
 		
@@ -16,6 +18,7 @@ public class test {
 		
 	}
 	
+
 	
 	
 	

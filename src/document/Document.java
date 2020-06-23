@@ -150,8 +150,8 @@ public abstract class Document {
 	    // TODO: You will play with this method in week 1, and 
 		// then implement it in week 2
 		
-	    double firstTerm = 1.015*(getNumWords()/getNumSentences());
-	    double secondTerm = 84.6*(getNumSyllables()/getNumWords());
+	    double firstTerm = 1.015*(((double)getNumWords()/(double)getNumSentences()));
+	    double secondTerm = 84.6*(((double)getNumSyllables()/(double)getNumWords()));
 	    return 206.835 - firstTerm - secondTerm;
 	}
 	

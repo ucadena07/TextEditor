@@ -5,19 +5,32 @@ public class test {
 	public static void main(String[] args) {
 	
 		
-		String s = "one (1), two (2), three (3)";
-		String[] s2 = s.split("[");
 		
-		for (int i = 0; i < s2.length; i ++)
-		{
-			System.out.println(s2[i]);
-		}
-		
+		System.out.println("hello");
 		
 		
 		
 	}
 	
+	public static void selectionSort(int[] vals)
+	{
+		int indexMin;
+		
+		for ( int i = 0; i < vals.length - 1; i++)
+		{
+			indexMin = i;
+			
+			for ( int j = i + 1; j < vals.length; j++)
+			{
+				if ( vals[j] < vals[indexMin])
+				{
+					indexMin = j;
+				}
+			}
+			
+			swap (vals, indexMin, i);
+		}
+	}
 
 	
 	
@@ -49,15 +62,15 @@ public class test {
 	
 	
 	
-//	public static int hasLetter(String word, char letter)
-//	{
-//		for (int i = 0; i < word.length(); i++) {
+//	public static boolean hasLetter(String word, char letter)
+//		{
+//			for (int i = 0; i < word.length(); i++) {
 //			if (word.charAt(i) == letter)
 //			{
-//				return i;
+//				return true;
 //			}
 //		}
-//		return -1;
+//			return false;
 //	}
 	
 //	public static int hasLetter(String word, char letter)

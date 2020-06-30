@@ -5,7 +5,6 @@
 /
 / Data structures: Measuring and Optimizing Performance
 
-<img src="TextEditor.png" />
 
 ---------------------------------------------------------[ DESCRIPTION ]--
 
@@ -49,7 +48,5 @@ spelling.WordPath.java
 spelling.NearbyWords.java
 spelling.WPTree.java
 
-
-<img src="TextEditor.png" />
 
 
